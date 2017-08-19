@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "df6f1852a58c418dcc00438d19cdf86d",
+    "content-hash": "8fe878ae5a17c3ae3a72acb981d13d69",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1712,6 +1712,47 @@
             ],
             "description": "eZ Publish Legacy starrating extension",
             "time": "2014-05-20T19:59:30+00:00"
+        },
+        {
+            "name": "ezsystems/eztags-ls",
+            "version": "2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/eztags.git",
+                "reference": "9ca78b14b49b0a3b62208049cb8778ed93e7909f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/eztags/zipball/9ca78b14b49b0a3b62208049cb8778ed93e7909f",
+                "reference": "9ca78b14b49b0a3b62208049cb8778ed93e7909f",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "eztags",
+                "branch-alias": {
+                    "dev-master": "2.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Netgen",
+                    "homepage": "http://www.netgenlabs.com"
+                },
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/eztags/contributors"
+                }
+            ],
+            "description": "eZ Tags is an extension for eZ Publish, providing more functionality for tagging content objects than ezkeyword datatype included in eZ Publish kernel.",
+            "time": "2016-10-31T11:34:18+00:00"
         },
         {
             "name": "ezsystems/ezwt-ls-extension",
