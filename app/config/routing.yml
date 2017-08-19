@@ -38,5 +38,8 @@ _multiFileUpload:
 _ezpublishLegacyRoutes:
     resource: "@EzPublishLegacyBundle/Resources/config/routing.yml"
 
+_eztagsRoutes:
+    resource: "@NetgenTagsBundle/Resources/config/routing.yml"
+
 _netgen_admin_ui:
     resource: "@NetgenAdminUIBundle/Resources/config/routing.yml"
