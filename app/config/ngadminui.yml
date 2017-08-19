@@ -1,0 +1,29 @@
+parameters:
+    netgen_admin_ui.ngadminui.is_admin_ui_siteaccess: true
+    eztags.ngadminui.routing.enable_tag_router: false
+    ezsettings.ngadminui.treemenu.http_cache: false
+ezpublish:
+    siteaccess:
+        list:
+            - ngadminui
+        groups:
+            ngadminui:
+                - ngadminui
+        match:
+            Map\URI:
+                ngadminui: ngadminui
+    system:
+        ngadminui:
+            user:
+                layout: '@NetgenAdminUI/pagelayout_login.html.twig'
+                login_template: '@NetgenAdminUI/user/login.html.twig'
+            languages:
+                - eng-GB
+            var_dir: var
+            repository: null
+ez_publish_legacy:
+    system:
+        ngadminui:
+            templating:
+                view_layout: '@NetgenAdminUI/pagelayout_legacy.html.twig'
+                module_layout: '@NetgenAdminUI/pagelayout_module.html.twig'

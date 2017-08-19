@@ -5,6 +5,8 @@ VarDir=var/site
 
 [ExtensionSettings]
 ActiveExtensions[]
+ActiveExtensions[]=ngadminui
+ActiveExtensions[]=ngsymfonytools
 ActiveExtensions[]=ezdemo
 ActiveExtensions[]=ezjscore
 ActiveExtensions[]=ezoe
@@ -27,6 +29,7 @@ CheckValidity=false
 AvailableSiteAccessList[]
 AvailableSiteAccessList[]=site
 AvailableSiteAccessList[]=admin
+AvailableSiteAccessList[]=ngadminui
 MatchOrder=uri
 HostMatchMapItems[]
 

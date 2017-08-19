@@ -53,6 +53,10 @@ class AppKernel extends Kernel
             new JMS\TranslationBundle\JMSTranslationBundle(),
             new eZ\Bundle\EzPublishLegacyBundle\EzPublishLegacyBundle($this),
             new EzSystems\EzPlatformXmlTextFieldTypeBundle\EzSystemsEzPlatformXmlTextFieldTypeBundle(),
+
+            new Lolautruche\EzCoreExtraBundle\EzCoreExtraBundle(),
+            new Netgen\Bundle\AdminUIBundle\NetgenAdminUIBundle(),
+
             new AppBundle\AppBundle(),
         );
 

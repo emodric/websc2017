@@ -13,8 +13,9 @@ RelatedSiteAccessList[]=ngadminui
 ShowHiddenNodes=true
 
 [DesignSettings]
-SiteDesign=admin2
+SiteDesign=ngadminui
 AdditionalSiteDesignList[]
+AdditionalSiteDesignList[]=admin2
 AdditionalSiteDesignList[]=admin
 AdditionalSiteDesignList[]=standard
 AdditionalSiteDesignList[]=base
@@ -30,4 +31,7 @@ TextTranslation=disabled
 [ContentSettings]
 CachedViewPreferences[full]=admin_navigation_content=1;admin_children_viewmode=list;admin_list_limit=1
 TranslationList=
-*/ ?>
+
+[TemplateSettings]
+Debug=disabled
+*/
