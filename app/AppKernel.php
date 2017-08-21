@@ -56,6 +56,7 @@ class AppKernel extends Kernel
 
             new Lolautruche\EzCoreExtraBundle\EzCoreExtraBundle(),
             new Netgen\TagsBundle\NetgenTagsBundle(),
+            new Netgen\Bundle\RichTextDataTypeBundle\NetgenRichTextDataTypeBundle(),
             new Netgen\Bundle\AdminUIBundle\NetgenAdminUIBundle(),
 
             new AppBundle\AppBundle(),

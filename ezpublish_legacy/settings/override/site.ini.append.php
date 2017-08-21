@@ -7,6 +7,7 @@ VarDir=var/site
 ActiveExtensions[]
 ActiveExtensions[]=ngadminui
 ActiveExtensions[]=ngsymfonytools
+ActiveExtensions[]=ezrichtext
 ActiveExtensions[]=eztags
 ActiveExtensions[]=ezdemo
 ActiveExtensions[]=ezjscore

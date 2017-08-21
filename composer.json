@@ -48,7 +48,8 @@
         "willdurand/js-translation-bundle": "^2.6.4",
         "netgen/admin-ui-bundle": "^2.0",
         "netgen/tagsbundle": "^3.0",
-        "ezsystems/eztags-ls": "^2.2"
+        "ezsystems/eztags-ls": "^2.2",
+        "netgen/richtext-datatype-bundle": "^1.0"
     },
     "require-dev": {
         "ezsystems/ezplatform-i18n": "^1.0",
