@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5dea4e456b65fc56f3890731edbe88de",
+    "content-hash": "0339f8af01c2d872ed0d164910bf4135",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -657,6 +657,60 @@
             "time": "2017-07-22T12:18:28+00:00"
         },
         {
+            "name": "doctrine/instantiator",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/instantiator.git",
+                "reference": "8e884e78f9f0eb1329e445619e04456e64d8051d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/8e884e78f9f0eb1329e445619e04456e64d8051d",
+                "reference": "8e884e78f9f0eb1329e445619e04456e64d8051d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3,<8.0-DEV"
+            },
+            "require-dev": {
+                "athletic/athletic": "~0.1.8",
+                "ext-pdo": "*",
+                "ext-phar": "*",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com",
+                    "homepage": "http://ocramius.github.com/"
+                }
+            ],
+            "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
+            "homepage": "https://github.com/doctrine/instantiator",
+            "keywords": [
+                "constructor",
+                "instantiate"
+            ],
+            "time": "2015-06-14T21:17:01+00:00"
+        },
+        {
             "name": "doctrine/lexer",
             "version": "v1.0.1",
             "source": {
@@ -709,6 +763,82 @@
                 "parser"
             ],
             "time": "2014-09-09T13:34:57+00:00"
+        },
+        {
+            "name": "doctrine/orm",
+            "version": "v2.5.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/doctrine2.git",
+                "reference": "c78afd51721804f4f76ff30d9b6f6159eb046161"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/c78afd51721804f4f76ff30d9b6f6159eb046161",
+                "reference": "c78afd51721804f4f76ff30d9b6f6159eb046161",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/cache": "~1.4",
+                "doctrine/collections": "~1.2",
+                "doctrine/common": ">=2.5-dev,<2.9-dev",
+                "doctrine/dbal": ">=2.5-dev,<2.7-dev",
+                "doctrine/instantiator": "~1.0.1",
+                "ext-pdo": "*",
+                "php": ">=5.4",
+                "symfony/console": "~2.5|~3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "symfony/yaml": "~2.3|~3.0"
+            },
+            "suggest": {
+                "symfony/yaml": "If you want to use YAML Metadata Mapping Driver"
+            },
+            "bin": [
+                "bin/doctrine",
+                "bin/doctrine.php"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\ORM\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                }
+            ],
+            "description": "Object-Relational-Mapper for PHP",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "database",
+                "orm"
+            ],
+            "time": "2017-08-18T19:17:35+00:00"
         },
         {
             "name": "egulias/listeners-debug-command-bundle",
@@ -1458,7 +1588,7 @@
         },
         {
             "name": "ezsystems/ezpublish-kernel",
-            "version": "v6.11.0-rc1",
+            "version": "v6.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/ezpublish-kernel.git",
@@ -1879,7 +2009,7 @@
         },
         {
             "name": "ezsystems/platform-ui-bundle",
-            "version": "v1.11.0-rc1",
+            "version": "v1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/PlatformUIBundle.git",
@@ -1930,7 +2060,7 @@
         },
         {
             "name": "ezsystems/repository-forms",
-            "version": "v1.9.0-rc1",
+            "version": "v1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/repository-forms.git",
@@ -3221,16 +3351,16 @@
         },
         {
             "name": "netgen/tagsbundle",
-            "version": "3.0.4",
+            "version": "3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/netgen/TagsBundle.git",
-                "reference": "f760d5c914a428009154013489746796c4ed2b64"
+                "reference": "17fd661cc3fc4953c1d27de42078ae50c6889add"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/netgen/TagsBundle/zipball/f760d5c914a428009154013489746796c4ed2b64",
-                "reference": "f760d5c914a428009154013489746796c4ed2b64",
+                "url": "https://api.github.com/repos/netgen/TagsBundle/zipball/17fd661cc3fc4953c1d27de42078ae50c6889add",
+                "reference": "17fd661cc3fc4953c1d27de42078ae50c6889add",
                 "shasum": ""
             },
             "require": {
@@ -3276,7 +3406,7 @@
                 }
             ],
             "description": "Netgen Tags Bundle is an eZ Platform / eZ Publish bundle for taxonomy management and easier classification of content, providing more functionality for tagging content than ezkeyword field type included in eZ Publish kernel.",
-            "time": "2017-06-19T11:43:46+00:00"
+            "time": "2017-08-21T13:13:43+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -7287,60 +7417,6 @@
             "time": "2017-02-14T19:40:03+00:00"
         },
         {
-            "name": "doctrine/instantiator",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda",
-                "reference": "185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1"
-            },
-            "require-dev": {
-                "athletic/athletic": "~0.1.8",
-                "ext-pdo": "*",
-                "ext-phar": "*",
-                "phpunit/phpunit": "^6.2.3",
-                "squizlabs/php_codesniffer": "^3.0.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Marco Pivetta",
-                    "email": "ocramius@gmail.com",
-                    "homepage": "http://ocramius.github.com/"
-                }
-            ],
-            "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
-            "homepage": "https://github.com/doctrine/instantiator",
-            "keywords": [
-                "constructor",
-                "instantiate"
-            ],
-            "time": "2017-07-22T11:58:36+00:00"
-        },
-        {
             "name": "ezsystems/behatbundle",
             "version": "v6.5.1",
             "target-dir": "EzSystems/BehatBundle",
@@ -9241,10 +9317,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "ezsystems/legacy-bridge": 20,
-        "ezsystems/ezpublish-legacy": 20,
-        "ezsystems/ezpublish-kernel": 5,
-        "ezsystems/repository-forms": 5,
-        "ezsystems/platform-ui-bundle": 5
+        "ezsystems/ezpublish-legacy": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
