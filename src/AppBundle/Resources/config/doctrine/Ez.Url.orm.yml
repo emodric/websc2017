@@ -1,0 +1,25 @@
+AppBundle\Entity\Ez\Url:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\Ez\UrlRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        created:
+            type: integer
+        isValid:
+            type: boolean
+        lastChecked:
+            type: integer
+        modified:
+            type: integer
+        originalUrlMd5:
+            type: string
+            length: '32'
+        url:
+            type: text
+    lifecycleCallbacks: {  }
