@@ -13,13 +13,16 @@ AppBundle\Entity\Ez\Url:
             type: integer
         isValid:
             type: boolean
+            column: is_valid
         lastChecked:
             type: integer
+            column: last_checked
         modified:
             type: integer
         originalUrlMd5:
             type: string
             length: '32'
+            column: original_url_md5
         url:
             type: text
     lifecycleCallbacks: {  }
