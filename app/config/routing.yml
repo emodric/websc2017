@@ -41,3 +41,6 @@ _js_routing:
 
 ez_hybrid_ui:
     resource: "@EzSystemsHybridPlatformUiBundle/Resources/config/routing.yml"
+
+_app_routes:
+    resource: "@AppBundle/Resources/config/routing.yml"

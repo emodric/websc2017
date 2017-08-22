@@ -1,0 +1,18 @@
+app_url_list:
+    path: /nextgen/url/list
+    defaults:
+        _controller: AppBundle:Url:listUrls
+
+app_url_view:
+    path: /nextgen/url/view/{urlId}
+    defaults:
+        _controller: AppBundle:Url:viewUrl
+    requirements:
+        urlId: \d+
+
+app_url_edit:
+    path: /nextgen/url/edit/{urlId}
+    defaults:
+        _controller: AppBundle:Url:editUrl
+    requirements:
+        urlId: \d+
