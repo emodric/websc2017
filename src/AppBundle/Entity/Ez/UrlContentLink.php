@@ -2,6 +2,8 @@
 
 namespace AppBundle\Entity\Ez;
 
+use eZ\Publish\API\Repository\Values\Content\Field;
+
 /**
  * UrlContentLink
  */
@@ -22,6 +24,12 @@ class UrlContentLink
      */
     private $contentFieldVersion;
 
+    public function __construct(Url $url, Field $field, $versionNo)
+    {
+        $this->setUrlId($url->getId());
+        $this->setContentFieldId($field->id);
+        $this->setContentFieldVersion($versionNo);
+    }
 
     /**
      * Set urlId

@@ -44,6 +44,11 @@ class Url
      */
     private $url;
 
+    public function __construct($url)
+    {
+        $this->setUrl($url);
+    }
+
     /**
      * Get id
      *
