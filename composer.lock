@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0339f8af01c2d872ed0d164910bf4135",
+    "content-hash": "332eb403251ce002dc2d13711bb67ff3",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1452,16 +1452,16 @@
         },
         {
             "name": "ezsystems/ezplatform-solr-search-engine",
-            "version": "v1.4.1",
+            "version": "v1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/ezplatform-solr-search-engine.git",
-                "reference": "6ee8b5a77bcd1888353fa1df4a003eb40476ce4a"
+                "reference": "a46cba2f1a4f13953e7113920f3df3520041c1d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/ezplatform-solr-search-engine/zipball/6ee8b5a77bcd1888353fa1df4a003eb40476ce4a",
-                "reference": "6ee8b5a77bcd1888353fa1df4a003eb40476ce4a",
+                "url": "https://api.github.com/repos/ezsystems/ezplatform-solr-search-engine/zipball/a46cba2f1a4f13953e7113920f3df3520041c1d1",
+                "reference": "a46cba2f1a4f13953e7113920f3df3520041c1d1",
                 "shasum": ""
             },
             "require": {
@@ -1498,7 +1498,7 @@
             ],
             "description": "Solr search engine implementation for eZ Platform",
             "homepage": "https://github.com/ezsystems/ezplatform-solr-search-engine",
-            "time": "2017-07-31T11:07:56+00:00"
+            "time": "2017-08-16T15:18:05+00:00"
         },
         {
             "name": "ezsystems/ezplatform-xmltext-fieldtype",
@@ -1920,16 +1920,16 @@
         },
         {
             "name": "ezsystems/legacy-bridge",
-            "version": "dev-master",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/LegacyBridge.git",
-                "reference": "c87f14fd2acf19786517e67ba2e9fa51221ccac4"
+                "reference": "ea0b2cd127b6d0fdb500a2aea9a05bd9752c02c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/LegacyBridge/zipball/c87f14fd2acf19786517e67ba2e9fa51221ccac4",
-                "reference": "c87f14fd2acf19786517e67ba2e9fa51221ccac4",
+                "url": "https://api.github.com/repos/ezsystems/LegacyBridge/zipball/ea0b2cd127b6d0fdb500a2aea9a05bd9752c02c0",
+                "reference": "ea0b2cd127b6d0fdb500a2aea9a05bd9752c02c0",
                 "shasum": ""
             },
             "require": {
@@ -1969,7 +1969,7 @@
                 }
             ],
             "description": "eZ Platform bridge to eZ Publish Legacy",
-            "time": "2017-08-16T14:28:31+00:00"
+            "time": "2017-08-22T12:04:27+00:00"
         },
         {
             "name": "ezsystems/platform-ui-assets-bundle",
@@ -9316,7 +9316,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "ezsystems/legacy-bridge": 20,
         "ezsystems/ezpublish-legacy": 20
     },
     "prefer-stable": false,
