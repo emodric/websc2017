@@ -49,7 +49,8 @@
         "netgen/admin-ui-bundle": "^2.0",
         "netgen/tagsbundle": "^3.0",
         "ezsystems/eztags-ls": "^2.2",
-        "netgen/richtext-datatype-bundle": "^1.0"
+        "netgen/richtext-datatype-bundle": "^1.0",
+        "doctrine/orm": "^2.5"
     },
     "require-dev": {
         "ezsystems/ezplatform-i18n": "^1.0",
