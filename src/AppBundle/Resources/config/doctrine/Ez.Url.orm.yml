@@ -1,6 +1,6 @@
 AppBundle\Entity\Ez\Url:
     type: entity
-    table: null
+    table: ezurl
     repositoryClass: AppBundle\Repository\Ez\UrlRepository
     id:
         id:
