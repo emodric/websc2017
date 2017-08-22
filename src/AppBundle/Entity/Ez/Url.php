@@ -17,22 +17,22 @@ class Url
     /**
      * @var int
      */
-    private $created;
+    private $created = 0;
 
     /**
      * @var bool
      */
-    private $isValid;
+    private $isValid = true;
 
     /**
      * @var int
      */
-    private $lastChecked;
+    private $lastChecked = 0;
 
     /**
      * @var int
      */
-    private $modified;
+    private $modified = 0;
 
     /**
      * @var string
