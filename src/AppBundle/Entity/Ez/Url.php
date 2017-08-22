@@ -42,7 +42,6 @@ class Url
      */
     private $url;
 
-
     /**
      * Get id
      *
@@ -151,16 +150,10 @@ class Url
 
     /**
      * Set originalUrlMd5
-     *
-     * @param string $originalUrlMd5
-     *
-     * @return Url
      */
-    public function setOriginalUrlMd5($originalUrlMd5)
+    public function setOriginalUrlMd5()
     {
-        $this->originalUrlMd5 = $originalUrlMd5;
-
-        return $this;
+        $this->originalUrlMd5 = md5($this->url);
     }
 
     /**
@@ -183,6 +176,7 @@ class Url
     public function setUrl($url)
     {
         $this->url = $url;
+        $this->setOriginalUrlMd5();
 
         return $this;
     }
