@@ -2,6 +2,8 @@
 
 namespace AppBundle\Entity\Ez;
 
+use DateTime;
+
 /**
  * Url
  */
@@ -65,13 +67,13 @@ class Url
     /**
      * Set created
      *
-     * @param integer $created
+     * @param \DateTime $created
      *
      * @return Url
      */
     public function setCreated($created)
     {
-        $this->created = $created;
+        $this->created = $created->getTimestamp();
 
         return $this;
     }
@@ -79,11 +81,11 @@ class Url
     /**
      * Get created
      *
-     * @return int
+     * @return \DateTime
      */
     public function getCreated()
     {
-        return $this->created;
+        return $this->getDateTimeObject($this->created);
     }
 
     /**
@@ -113,13 +115,13 @@ class Url
     /**
      * Set lastChecked
      *
-     * @param integer $lastChecked
+     * @param \DateTime $lastChecked
      *
      * @return Url
      */
     public function setLastChecked($lastChecked)
     {
-        $this->lastChecked = $lastChecked;
+        $this->lastChecked = $lastChecked->getTimestamp();
 
         return $this;
     }
@@ -127,23 +129,23 @@ class Url
     /**
      * Get lastChecked
      *
-     * @return int
+     * @return \DateTime
      */
     public function getLastChecked()
     {
-        return $this->lastChecked;
+        return $this->getDateTimeObject($this->lastChecked);
     }
 
     /**
      * Set modified
      *
-     * @param integer $modified
+     * @param \DateTime $modified
      *
      * @return Url
      */
     public function setModified($modified)
     {
-        $this->modified = $modified;
+        $this->modified = $modified->getTimestamp();
 
         return $this;
     }
@@ -151,11 +153,11 @@ class Url
     /**
      * Get modified
      *
-     * @return int
+     * @return \DateTime
      */
     public function getModified()
     {
-        return $this->modified;
+        return $this->getDateTimeObject($this->modified);
     }
 
     /**
@@ -199,6 +201,19 @@ class Url
     public function getUrl()
     {
         return $this->url;
+    }
+
+    /**
+     * @param int $timestamp
+     *
+     * @return DateTime
+     */
+    private function getDateTimeObject($timestamp)
+    {
+        $dateTime = new DateTime();
+        $dateTime->setTimestamp($timestamp);
+
+        return $dateTime;
     }
 }
 
