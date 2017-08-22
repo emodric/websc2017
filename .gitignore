@@ -21,6 +21,8 @@
 .php~
 /bin/behat
 /bin/phpunit
+/bin/doctrine
+/bin/doctrine.php
 /bin/doctrine-dbal
 /bin/php-parse
 /bin/security-checker
@@ -47,6 +49,7 @@ composer.phar
 composer.lock
 .buildpath
 .project
+.idea/
 .settings/
 behat.yml
 .php_cs.cache
