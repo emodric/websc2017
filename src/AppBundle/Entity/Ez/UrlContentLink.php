@@ -10,11 +10,6 @@ class UrlContentLink
     /**
      * @var int
      */
-    private $id;
-
-    /**
-     * @var int
-     */
     private $urlId;
 
     /**
@@ -27,16 +22,6 @@ class UrlContentLink
      */
     private $contentFieldVersion;
 
-
-    /**
-     * Get id
-     *
-     * @return int
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
 
     /**
      * Set urlId
