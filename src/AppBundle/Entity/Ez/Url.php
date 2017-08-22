@@ -43,6 +43,16 @@ class Url
     private $url;
 
     /**
+     * Constructor.
+     *
+     * @param string $url
+     */
+    public function __construct($url)
+    {
+        $this->setUrl($url);
+    }
+
+    /**
      * Get id
      *
      * @return int
