@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "332eb403251ce002dc2d13711bb67ff3",
+    "content-hash": "fb9cd3b339b7f77e038579435e950e09",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1674,16 +1674,16 @@
         },
         {
             "name": "ezsystems/ezpublish-legacy",
-            "version": "dev-master",
+            "version": "v2017.08.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/ezpublish-legacy.git",
-                "reference": "d16bbb4a449e2c5ed207c581abe8dd7e5e57fd93"
+                "reference": "0e153775b1ea5eada33ab71777c96cdac4b1bf3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/ezpublish-legacy/zipball/d16bbb4a449e2c5ed207c581abe8dd7e5e57fd93",
-                "reference": "d16bbb4a449e2c5ed207c581abe8dd7e5e57fd93",
+                "url": "https://api.github.com/repos/ezsystems/ezpublish-legacy/zipball/0e153775b1ea5eada33ab71777c96cdac4b1bf3f",
+                "reference": "0e153775b1ea5eada33ab71777c96cdac4b1bf3f",
                 "shasum": ""
             },
             "require": {
@@ -1698,7 +1698,7 @@
                 "ext-simplexml": "*",
                 "ext-spl": "*",
                 "ezsystems/ezautosave-ls": "~5.3",
-                "ezsystems/ezdemo-ls-extension": "~5.3",
+                "ezsystems/ezdemo-ls-extension": "~5.4",
                 "ezsystems/ezflow-ls-extension": "~5.3",
                 "ezsystems/ezgmaplocation-ls-extension": "~5.3",
                 "ezsystems/ezie-ls": "~5.3",
@@ -1740,6 +1740,7 @@
                 "ext-curl": "Curl provides better support for interacting with other servers, like downloading packages over SSL",
                 "ext-gd": "Unless you have ImageMagic installed GD is required for eZ Publish to be able to manipulate images",
                 "ext-mysqli": "Mysqli is the default database handler used by eZ Publish",
+                "ext-openssl": "OpenSSL provides cryptographically secure random bytes, which is used in certain parts of the product to greatly improve security",
                 "ext-pcntl": "If you plan to take advantage of eZ Publish Async publishing feature, then pcntl extension is required",
                 "ezsystems/ezfind-ls": "ezfind is a Solr based advance search engine for eZ Publish with a lot more features then the built in search",
                 "ezsystems/ezscriptmonitor-ls": "ezscriptmonitor makes it possible to better deal with long running bulk operations within eZ Publish",
@@ -1759,7 +1760,7 @@
             ],
             "description": "eZ Publish LegacyStack (4.x)",
             "homepage": "http://share.ez.no",
-            "time": "2017-08-16T10:38:48+00:00"
+            "time": "2017-08-22T14:31:01+00:00"
         },
         {
             "name": "ezsystems/ezpublish-legacy-installer",
@@ -9315,9 +9316,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "ezsystems/ezpublish-legacy": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
