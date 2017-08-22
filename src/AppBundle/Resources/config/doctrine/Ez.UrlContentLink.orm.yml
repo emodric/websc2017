@@ -1,0 +1,18 @@
+AppBundle\Entity\Ez\UrlContentLink:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\Ez\UrlContentLinkRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        urlId:
+            type: integer
+        contentFieldId:
+            type: integer
+        contentFieldVersion:
+            type: integer
+    lifecycleCallbacks: {  }
