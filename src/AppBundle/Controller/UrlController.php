@@ -2,6 +2,7 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Form\Type\EditUrlType;
 use eZ\Bundle\EzPublishCoreBundle\Controller;
 use Pagerfanta\Adapter\DoctrineORMAdapter;
 use Pagerfanta\Pagerfanta;
@@ -48,7 +49,22 @@ class UrlController extends Controller
         return $this->render('@App/url/view.html.twig', array('url' => $url, 'relatedContent' => $content));
     }
 
-    public function editUrlAction()
+    public function editUrlAction($urlId, Request $request)
     {
+        $em = $this->get('doctrine.orm.entity_manager');
+        $urlRepo = $em->getRepository('AppBundle:Ez\Url');
+
+        $url = $urlRepo->find($urlId);
+
+        $form = $this->get('form.factory')->create(EditUrlType::class, $url);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em->flush($url);
+
+            return $this->redirectToRoute('app_url_view', array('urlId' => $url->getId()));
+        }
+
+        return $this->render('@App/url/edit.html.twig', array('url' => $url, 'form' => $form->createView()));
     }
 }
