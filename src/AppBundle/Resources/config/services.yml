@@ -1,8 +1,24 @@
+parameters:
+    app.default_pagelayout: '@@NetgenAdminUI/pagelayout.html.twig'
+    app.platform_ui_pagelayout: '@@EzSystemsHybridPlatformUi/pjax_layout.html.twig'
+
 services:
     app.ngadminui.menu.links:
         class: AppBundle\NgAdminUI\LinksMenuPlugin
         tags:
             - {name: netgen_admin_ui.menu_plugin}
+    app.twig.global.my_admin:
+        class: AppBundle\Templating\MyAdminGlobalVariable
+        arguments:
+            - '%app.default_pagelayout%'
+
+    app.listener.set_platform_ui_pagelayout:
+        class: AppBundle\EventListener\SetPlatformUIPageLayoutListener
+        arguments:
+            - '@app.twig.global.my_admin'
+            - '%app.platform_ui_pagelayout%'
+        tags:
+            - {name: kernel.event_subscriber}
 
     app.platform_ui_navigationhub.zones.links:
         class: "%ezsystems.platformui.navigationhub.zone.class%"
