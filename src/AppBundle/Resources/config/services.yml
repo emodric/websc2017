@@ -1,0 +1,5 @@
+services:
+    app.ngadminui.menu.links:
+        class: AppBundle\NgAdminUI\LinksMenuPlugin
+        tags:
+            - {name: netgen_admin_ui.menu_plugin}
