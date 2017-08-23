@@ -2,6 +2,9 @@
 
 namespace AppBundle\Repository\Ez;
 
+use AppBundle\Entity\Ez\UrlContentLink;
+use Doctrine\DBAL\Types\Type;
+
 /**
  * UrlContentLinkRepository
  *
@@ -10,4 +13,28 @@ namespace AppBundle\Repository\Ez;
  */
 class UrlContentLinkRepository extends \Doctrine\ORM\EntityRepository
 {
+    /**
+     * @param \AppBundle\Entity\Ez\UrlContentLink $link
+     *
+     * @return int
+     */
+    public function getContentId(UrlContentLink $link)
+    {
+        $queryBuilder = $this->getEntityManager()->getConnection()->createQueryBuilder();
+
+        $queryBuilder->select('DISTINCT a.contentobject_id')
+            ->from('ezcontentobject_attribute', 'a')
+            ->where(
+                $queryBuilder->expr()->andX(
+                    $queryBuilder->expr()->eq('a.id', ':id'),
+                    $queryBuilder->expr()->eq('a.version', ':version')
+                )
+            )
+            ->setParameter('id', $link->getContentFieldId(), Type::INTEGER)
+            ->setParameter('version', $link->getContentFieldVersion(), Type::INTEGER);
+
+        $result = $queryBuilder->execute()->fetchAll();
+
+        return (int)$result[0]['contentobject_id'];
+    }
 }

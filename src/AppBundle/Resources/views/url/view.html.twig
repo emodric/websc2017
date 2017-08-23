@@ -1,0 +1,13 @@
+<h1>URL #{{ url.id }}</h1>
+
+<p><strong>Address:</strong> {{ url.url }}</p>
+<p><strong>Status:</strong> {{ url.isValid ? 'Valid' : 'Invalid' }}</p>
+<p><strong>Last checked:</strong> {{ url.lastChecked.timestamp > 0 ? url.lastChecked|date : 'Never' }}</p>
+
+<a href="{{ path('app_url_edit', {'urlId': url.id}) }}">Edit</a>
+
+<h2>List of content</h2>
+
+{% for content in relatedContent %}
+    <p>{{ ez_content_name(content) }}</p>
+{% endfor %}

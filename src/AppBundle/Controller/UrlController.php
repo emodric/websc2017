@@ -25,8 +25,27 @@ class UrlController extends Controller
         return $this->render('@App/url/list.html.twig', array('urls' => $pager));
     }
 
-    public function viewUrlAction()
+    public function viewUrlAction($urlId)
     {
+        $em = $this->get('doctrine.orm.entity_manager');
+
+        $urlRepo = $em->getRepository('AppBundle:Ez\Url');
+        $linkRepo = $em->getRepository('AppBundle:Ez\UrlContentLink');
+        $contentService = $this->getRepository()->getContentService();
+
+        $url = $urlRepo->find($urlId);
+        $links = $linkRepo->findBy(array('urlId' => $url->getId()));
+
+        $content = array();
+
+        foreach ($links as $link) {
+            $contentId = $linkRepo->getContentId($link);
+            if (!isset($content[$contentId])) {
+                $content[$contentId] = $contentService->loadContent($contentId);
+            }
+        }
+
+        return $this->render('@App/url/view.html.twig', array('url' => $url, 'relatedContent' => $content));
     }
 
     public function editUrlAction()
