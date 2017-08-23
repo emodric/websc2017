@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb9cd3b339b7f77e038579435e950e09",
+    "content-hash": "aed17f3371fad08cb519e5ce594a438d",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -64,6 +64,128 @@
                 "tls"
             ],
             "time": "2017-03-06T11:59:08+00:00"
+        },
+        {
+            "name": "composer/installers",
+            "version": "dev-ezplatform_assets",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dpobel/installers.git",
+                "reference": "a93008215a229e77ee58d5c5f28b8033173a1c87"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dpobel/installers/zipball/a93008215a229e77ee58d5c5f28b8033173a1c87",
+                "reference": "a93008215a229e77ee58d5c5f28b8033173a1c87",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "https://composer.github.io/installers/",
+            "keywords": [
+                "AGL",
+                "Aimeos",
+                "AnnotateCms",
+                "Attogram",
+                "Bitrix",
+                "CakePHP",
+                "Chef",
+                "Cockpit",
+                "CodeIgniter",
+                "Craft",
+                "Croogo",
+                "DokuWiki",
+                "Dolibarr",
+                "Drupal",
+                "Elgg",
+                "Eliasis",
+                "ExpressionEngine",
+                "FuelPHP",
+                "Grav",
+                "Hurad",
+                "ImageCMS",
+                "Joomla",
+                "Kanboard",
+                "Kohana",
+                "Laravel",
+                "Lavalite",
+                "Lithium",
+                "MODULEWork",
+                "MODX Evo",
+                "Magento",
+                "Mako",
+                "Mautic",
+                "Maya",
+                "MediaWiki",
+                "Moodle",
+                "OXID",
+                "PPI",
+                "Piwik",
+                "Plentymarkets",
+                "Porto",
+                "Puppet",
+                "RadPHP",
+                "ReIndex",
+                "Roundcube",
+                "SMF",
+                "SilverStripe",
+                "SyDES",
+                "TYPO3",
+                "Thelia",
+                "WolfCMS",
+                "WordPress",
+                "YAWIK",
+                "Zend",
+                "Zikula",
+                "concrete5",
+                "eZ Platform",
+                "iTop",
+                "installer",
+                "phpBB",
+                "shopware",
+                "symfony"
+            ],
+            "support": {
+                "source": "https://github.com/dpobel/installers/tree/ezplatform_assets"
+            },
+            "time": "2017-05-09T13:40:36+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -915,52 +1037,6 @@
             "time": "2017-03-30T14:15:04+00:00"
         },
         {
-            "name": "ezsystems/content-on-the-fly-prototype",
-            "version": "v0.1.11",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ezsystems/content-on-the-fly-prototype-bundle.git",
-                "reference": "14f95e0b7fd3b543a8ae67426282823d2ebe06f1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/content-on-the-fly-prototype-bundle/zipball/14f95e0b7fd3b543a8ae67426282823d2ebe06f1",
-                "reference": "14f95e0b7fd3b543a8ae67426282823d2ebe06f1",
-                "shasum": ""
-            },
-            "require": {
-                "ezsystems/ezpublish-kernel": "^6.3",
-                "ezsystems/platform-ui-bundle": "^1.4"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.1"
-            },
-            "type": "ezplatform-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "EzSystems\\EzContentOnTheFly\\": "lib",
-                    "EzSystems\\EzContentOnTheFlyBundle\\": "bundle"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "eZ Systems",
-                    "email": "dev-team@ez.no"
-                }
-            ],
-            "description": "Platform UI Content on the Fly feature",
-            "time": "2017-07-24T14:26:54+00:00"
-        },
-        {
             "name": "ezsystems/ez-support-tools",
             "version": "v0.1.2",
             "source": {
@@ -1399,56 +1475,6 @@
             ],
             "description": "HTTP cache handling for eZ Platform.",
             "time": "2017-03-28T11:34:36+00:00"
-        },
-        {
-            "name": "ezsystems/ezplatform-multi-file-upload",
-            "version": "v0.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ezsystems/ezplatform-multi-file-upload.git",
-                "reference": "a6c07bb952a6a4a0c14b7cb5903e65c03780886e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/ezplatform-multi-file-upload/zipball/a6c07bb952a6a4a0c14b7cb5903e65c03780886e",
-                "reference": "a6c07bb952a6a4a0c14b7cb5903e65c03780886e",
-                "shasum": ""
-            },
-            "require": {
-                "ezsystems/ezpublish-kernel": "^6.8",
-                "ezsystems/platform-ui-assets-bundle": "^3.2",
-                "ezsystems/platform-ui-bundle": "^1.8"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.1",
-                "phpunit/phpunit": "~4.7"
-            },
-            "type": "ezplatform-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "EzSystems\\MultiFileUpload\\": "lib/",
-                    "EzSystems\\MultiFileUploadBundle\\": "bundle/",
-                    "EzSystems\\Tests\\MultiFileUpload\\": "tests/lib/",
-                    "EzSystems\\Tests\\MultiFileUploadBundle\\": "tests/bundle/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "TTL-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "eZ Systems",
-                    "email": "dev-team@ez.no"
-                }
-            ],
-            "description": "Multi File Upload for eZ Platform",
-            "time": "2017-06-12T08:20:13+00:00"
         },
         {
             "name": "ezsystems/ezplatform-solr-search-engine",
@@ -1920,6 +1946,109 @@
             "time": "2016-03-08T10:48:29+00:00"
         },
         {
+            "name": "ezsystems/hybrid-platform-ui",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/hybrid-platform-ui.git",
+                "reference": "d81ebb11c4bd04ac64f9d785557a56d282f141b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/hybrid-platform-ui/zipball/d81ebb11c4bd04ac64f9d785557a56d282f141b4",
+                "reference": "d81ebb11c4bd04ac64f9d785557a56d282f141b4",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "dev-ezplatform_assets as 1.3.x-dev",
+                "ezsystems/ezpublish-kernel": " ^6.11@dev",
+                "ezsystems/hybrid-platform-ui-assets": "^0.4",
+                "ezsystems/hybrid-platform-ui-core-components": "^0.1@dev",
+                "ezsystems/platform-ui-bundle": "2.0.x-dev",
+                "friendsofsymfony/jsrouting-bundle": "^1.6",
+                "jms/translation-bundle": "^1.3",
+                "php": "^7.0",
+                "symfony/symfony": "~2.8 | ~3.0"
+            },
+            "require-dev": {
+                "memio/spec-gen": "^0.6",
+                "phpspec/phpspec": "^3.2"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-*": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "EzSystems\\HybridPlatformUiBundle\\": "src/bundle",
+                    "EzSystems\\HybridPlatformUi\\": "src/lib",
+                    "specs\\EzSystems\\HybridPlatformUi\\": "specs"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "time": "2017-08-22T12:22:02+00:00"
+        },
+        {
+            "name": "ezsystems/hybrid-platform-ui-assets",
+            "version": "v0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/hybrid-platform-ui-assets.git",
+                "reference": "f13d8201cd058ad7545764362cd473e82727d8e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/hybrid-platform-ui-assets/zipball/f13d8201cd058ad7545764362cd473e82727d8e4",
+                "reference": "f13d8201cd058ad7545764362cd473e82727d8e4",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.3@dev"
+            },
+            "type": "ezplatform-meta-assets",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "External assets dependencies for Hybrid Platform UI",
+            "time": "2017-07-18T11:51:54+00:00"
+        },
+        {
+            "name": "ezsystems/hybrid-platform-ui-core-components",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/hybrid-platform-ui-core-components.git",
+                "reference": "da277f59d9bac2fee916488918d1875c29988cb0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/hybrid-platform-ui-core-components/zipball/da277f59d9bac2fee916488918d1875c29988cb0",
+                "reference": "da277f59d9bac2fee916488918d1875c29988cb0",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.3"
+            },
+            "type": "ezplatform-assets",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "Hybrid Platform UI core frontend components",
+            "time": "2017-08-02T07:54:53+00:00"
+        },
+        {
             "name": "ezsystems/legacy-bridge",
             "version": "v1.3.0",
             "source": {
@@ -2010,23 +2139,26 @@
         },
         {
             "name": "ezsystems/platform-ui-bundle",
-            "version": "v1.11.0",
+            "version": "2.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/PlatformUIBundle.git",
-                "reference": "aa4ecbb4a7881d937061ceb8b2a98a6607c38821"
+                "reference": "5a8eecb78b76a3b92c0bbe29680b9829486e44ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/PlatformUIBundle/zipball/aa4ecbb4a7881d937061ceb8b2a98a6607c38821",
-                "reference": "aa4ecbb4a7881d937061ceb8b2a98a6607c38821",
+                "url": "https://api.github.com/repos/ezsystems/PlatformUIBundle/zipball/5a8eecb78b76a3b92c0bbe29680b9829486e44ad",
+                "reference": "5a8eecb78b76a3b92c0bbe29680b9829486e44ad",
                 "shasum": ""
             },
             "require": {
                 "ezsystems/ez-support-tools": "^0.1",
                 "ezsystems/ezpublish-kernel": "^6.6",
+                "ezsystems/hybrid-platform-ui": "dev-master as 1.0.x-dev",
+                "ezsystems/hybrid-platform-ui-assets": "~0.2",
                 "ezsystems/platform-ui-assets-bundle": "^3.1.0",
                 "ezsystems/repository-forms": "^1.2",
+                "friendsofsymfony/jsrouting-bundle": "^1.6",
                 "jms/translation-bundle": "^1.3",
                 "willdurand/js-translation-bundle": "^2.5",
                 "zetacomponents/system-information": "^1.1"
@@ -2041,10 +2173,10 @@
             "extra": {
                 "_ci_branch-comment_": "Keep ci branch up-to-date with master or branch if on stable. ci is never on github but convention used for ci behat testing!",
                 "_ezplatform_branch_for_behat_tests_comment_": "ezplatform branch to use to run Behat tests",
-                "_ezplatform_branch_for_behat_tests": "1.11",
+                "_ezplatform_branch_for_behat_tests": "master",
                 "branch-alias": {
-                    "dev-master": "1.11.x-dev",
-                    "dev-tmp_ci_branch": "1.11.x-dev"
+                    "dev-master": "1.10.x-dev",
+                    "dev-tmp_ci_branch": "1.10.x-dev"
                 }
             },
             "autoload": {
@@ -2057,7 +2189,7 @@
                 "GPL-2.0"
             ],
             "description": "eZ Platform UI Bundle",
-            "time": "2017-08-09T10:42:13+00:00"
+            "time": "2017-08-03T10:56:15+00:00"
         },
         {
             "name": "ezsystems/repository-forms",
@@ -2116,6 +2248,60 @@
             ],
             "description": "Use Symfony forms with eZ Platform repository objects",
             "time": "2017-08-16T10:19:42+00:00"
+        },
+        {
+            "name": "fig/link-util",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/link-util.git",
+                "reference": "1a07821801a148be4add11ab0603e4af55a72fac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/link-util/zipball/1a07821801a148be4add11ab0603e4af55a72fac",
+                "reference": "1a07821801a148be4add11ab0603e4af55a72fac",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0",
+                "psr/link": "~1.0@dev"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.1",
+                "squizlabs/php_codesniffer": "^2.3.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fig\\Link\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common utility implementations for HTTP links",
+            "keywords": [
+                "http",
+                "http-link",
+                "link",
+                "psr",
+                "psr-13",
+                "rest"
+            ],
+            "time": "2016-10-17T18:31:11+00:00"
         },
         {
             "name": "friendsofsymfony/http-cache",
@@ -2270,23 +2456,82 @@
             "time": "2017-01-06T14:39:18+00:00"
         },
         {
-            "name": "guzzle/guzzle",
-            "version": "v3.9.3",
+            "name": "friendsofsymfony/jsrouting-bundle",
+            "version": "1.6.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "0645b70d953bc1c067bbc8d5bc53194706b628d9"
+                "url": "https://github.com/FriendsOfSymfony/FOSJsRoutingBundle.git",
+                "reference": "11424b43c3bcb020a60caa6d6f97acdd125c34ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/0645b70d953bc1c067bbc8d5bc53194706b628d9",
-                "reference": "0645b70d953bc1c067bbc8d5bc53194706b628d9",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSJsRoutingBundle/zipball/11424b43c3bcb020a60caa6d6f97acdd125c34ca",
+                "reference": "11424b43c3bcb020a60caa6d6f97acdd125c34ca",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/console": "~2.3|3.*",
+                "symfony/framework-bundle": "~2.3|3.*",
+                "symfony/serializer": "~2.3|3.*",
+                "willdurand/jsonp-callback-validator": "~1.0"
+            },
+            "require-dev": {
+                "symfony/expression-language": "~2.4|3.*",
+                "symfony/phpunit-bridge": "^3.3"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FOS\\JsRoutingBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "FriendsOfSymfony Community",
+                    "homepage": "https://github.com/friendsofsymfony/FOSJsRoutingBundle/contributors"
+                },
+                {
+                    "name": "William Durand",
+                    "email": "william.durand1@gmail.com"
+                }
+            ],
+            "description": "A pretty nice way to expose your Symfony2 routing to client applications.",
+            "homepage": "http://friendsofsymfony.github.com",
+            "keywords": [
+                "Js Routing",
+                "javascript",
+                "routing"
+            ],
+            "time": "2017-08-10T12:17:19+00:00"
+        },
+        {
+            "name": "guzzle/guzzle",
+            "version": "v3.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "4de0618a01b34aa1c8c33a3f13f396dcd3882eba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/4de0618a01b34aa1c8c33a3f13f396dcd3882eba",
+                "reference": "4de0618a01b34aa1c8c33a3f13f396dcd3882eba",
                 "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
                 "php": ">=5.3.3",
-                "symfony/event-dispatcher": "~2.1"
+                "symfony/event-dispatcher": ">=2.1"
             },
             "replace": {
                 "guzzle/batch": "self.version",
@@ -2313,21 +2558,18 @@
                 "guzzle/stream": "self.version"
             },
             "require-dev": {
-                "doctrine/cache": "~1.3",
-                "monolog/monolog": "~1.0",
+                "doctrine/cache": "*",
+                "monolog/monolog": "1.*",
                 "phpunit/phpunit": "3.7.*",
-                "psr/log": "~1.0",
-                "symfony/class-loader": "~2.1",
-                "zendframework/zend-cache": "2.*,<2.3",
-                "zendframework/zend-log": "2.*,<2.3"
-            },
-            "suggest": {
-                "guzzlehttp/guzzle": "Guzzle 5 has moved to a new package name. The package you have installed, Guzzle 3, is deprecated."
+                "psr/log": "1.0.*",
+                "symfony/class-loader": "*",
+                "zendframework/zend-cache": "<2.3",
+                "zendframework/zend-log": "<2.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.9-dev"
+                    "dev-master": "3.8-dev"
                 }
             },
             "autoload": {
@@ -2351,7 +2593,7 @@
                     "homepage": "https://github.com/guzzle/guzzle/contributors"
                 }
             ],
-            "description": "PHP HTTP client. This library is deprecated in favor of https://packagist.org/packages/guzzlehttp/guzzle",
+            "description": "Guzzle is a PHP HTTP client library and framework for building RESTful web service clients",
             "homepage": "http://guzzlephp.org/",
             "keywords": [
                 "client",
@@ -2363,7 +2605,7 @@
                 "web service"
             ],
             "abandoned": "guzzlehttp/guzzle",
-            "time": "2015-03-18T18:23:50+00:00"
+            "time": "2014-01-28T22:29:15+00:00"
         },
         {
             "name": "hautelook/templated-uri-bundle",
@@ -2579,48 +2821,6 @@
                 "parameters management"
             ],
             "time": "2015-11-10T17:04:01+00:00"
-        },
-        {
-            "name": "ircmaxell/password-compat",
-            "version": "v1.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ircmaxell/password_compat.git",
-                "reference": "5c5cde8822a69545767f7c7f3058cb15ff84614c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ircmaxell/password_compat/zipball/5c5cde8822a69545767f7c7f3058cb15ff84614c",
-                "reference": "5c5cde8822a69545767f7c7f3058cb15ff84614c",
-                "shasum": ""
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.*"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "lib/password.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Anthony Ferrara",
-                    "email": "ircmaxell@php.net",
-                    "homepage": "http://blog.ircmaxell.com"
-                }
-            ],
-            "description": "A compatibility library for the proposed simplified password hashing algorithm: https://wiki.php.net/rfc/password_hash",
-            "homepage": "https://github.com/ircmaxell/password_compat",
-            "keywords": [
-                "hashing",
-                "password"
-            ],
-            "time": "2014-11-20T16:49:30+00:00"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -3828,6 +4028,104 @@
             "time": "2016-08-06T20:24:11+00:00"
         },
         {
+            "name": "psr/container",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "time": "2017-02-14T16:28:37+00:00"
+        },
+        {
+            "name": "psr/link",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/link.git",
+                "reference": "eea8e8662d5cd3ae4517c9b864493f59fca95562"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/link/zipball/eea8e8662d5cd3ae4517c9b864493f59fca95562",
+                "reference": "eea8e8662d5cd3ae4517c9b864493f59fca95562",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Link\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for HTTP links",
+            "keywords": [
+                "http",
+                "http-link",
+                "link",
+                "psr",
+                "psr-13",
+                "rest"
+            ],
+            "time": "2016-10-28T16:06:13+00:00"
+        },
+        {
             "name": "psr/log",
             "version": "1.0.2",
             "source": {
@@ -3873,6 +4171,54 @@
                 "psr-3"
             ],
             "time": "2016-10-10T12:19:37+00:00"
+        },
+        {
+            "name": "psr/simple-cache",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/simple-cache.git",
+                "reference": "753fa598e8f3b9966c886fe13f370baa45ef0e24"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/753fa598e8f3b9966c886fe13f370baa45ef0e24",
+                "reference": "753fa598e8f3b9966c886fe13f370baa45ef0e24",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\SimpleCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for simple caching",
+            "keywords": [
+                "cache",
+                "caching",
+                "psr",
+                "psr-16",
+                "simple-cache"
+            ],
+            "time": "2017-01-02T13:31:39+00:00"
         },
         {
             "name": "qafoo/rmf",
@@ -4076,16 +4422,16 @@
         },
         {
             "name": "sensiolabs/security-checker",
-            "version": "v4.1.4",
+            "version": "v4.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/security-checker.git",
-                "reference": "72f4238707071459a6680854c8c74a0ebb999549"
+                "reference": "55553c3ad6ae2121c1b1475d4c880d71b31b8f68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/security-checker/zipball/72f4238707071459a6680854c8c74a0ebb999549",
-                "reference": "72f4238707071459a6680854c8c74a0ebb999549",
+                "url": "https://api.github.com/repos/sensiolabs/security-checker/zipball/55553c3ad6ae2121c1b1475d4c880d71b31b8f68",
+                "reference": "55553c3ad6ae2121c1b1475d4c880d71b31b8f68",
                 "shasum": ""
             },
             "require": {
@@ -4117,7 +4463,7 @@
                 }
             ],
             "description": "A security checker for your composer.lock",
-            "time": "2017-08-14T18:42:49+00:00"
+            "time": "2017-08-22T22:18:16+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -4363,59 +4709,6 @@
             "time": "2017-03-26T11:55:59+00:00"
         },
         {
-            "name": "symfony/polyfill-apcu",
-            "version": "v1.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-apcu.git",
-                "reference": "cec32398a973a9bfe9d2f94f4b5d5e186b40b698"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-apcu/zipball/cec32398a973a9bfe9d2f94f4b5d5e186b40b698",
-                "reference": "cec32398a973a9bfe9d2f94f4b5d5e186b40b698",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.5-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "bootstrap.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill backporting apcu_* functions to lower PHP versions",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "apcu",
-                "compatibility",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "time": "2017-07-05T15:09:33+00:00"
-        },
-        {
             "name": "symfony/polyfill-intl-icu",
             "version": "v1.5.0",
             "source": {
@@ -4526,120 +4819,6 @@
             "keywords": [
                 "compatibility",
                 "mbstring",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "time": "2017-06-14T15:44:48+00:00"
-        },
-        {
-            "name": "symfony/polyfill-php54",
-            "version": "v1.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-php54.git",
-                "reference": "b7763422a5334c914ef0298ed21b253d25913a6e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php54/zipball/b7763422a5334c914ef0298ed21b253d25913a6e",
-                "reference": "b7763422a5334c914ef0298ed21b253d25913a6e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.5-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php54\\": ""
-                },
-                "files": [
-                    "bootstrap.php"
-                ],
-                "classmap": [
-                    "Resources/stubs"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill backporting some PHP 5.4+ features to lower PHP versions",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "time": "2017-06-14T15:44:48+00:00"
-        },
-        {
-            "name": "symfony/polyfill-php55",
-            "version": "v1.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-php55.git",
-                "reference": "29b1381d66f16e0581aab0b9f678ccf073288f68"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php55/zipball/29b1381d66f16e0581aab0b9f678ccf073288f68",
-                "reference": "29b1381d66f16e0581aab0b9f678ccf073288f68",
-                "shasum": ""
-            },
-            "require": {
-                "ircmaxell/password-compat": "~1.0",
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.5-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php55\\": ""
-                },
-                "files": [
-                    "bootstrap.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill backporting some PHP 5.5+ features to lower PHP versions",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
                 "polyfill",
                 "portable",
                 "shim"
@@ -4814,67 +4993,6 @@
             "time": "2017-07-05T15:09:33+00:00"
         },
         {
-            "name": "symfony/security-acl",
-            "version": "v3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/security-acl.git",
-                "reference": "053b49bf4aa333a392c83296855989bcf88ddad1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-acl/zipball/053b49bf4aa333a392c83296855989bcf88ddad1",
-                "reference": "053b49bf4aa333a392c83296855989bcf88ddad1",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9",
-                "symfony/security-core": "~2.8|~3.0"
-            },
-            "require-dev": {
-                "doctrine/common": "~2.2",
-                "doctrine/dbal": "~2.2",
-                "psr/log": "~1.0",
-                "symfony/phpunit-bridge": "~2.8|~3.0"
-            },
-            "suggest": {
-                "doctrine/dbal": "For using the built-in ACL implementation",
-                "symfony/class-loader": "For using the ACL generateSql script",
-                "symfony/finder": "For using the ACL generateSql script"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Security\\Acl\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Security Component - ACL (Access Control List)",
-            "homepage": "https://symfony.com",
-            "time": "2015-12-28T09:39:46+00:00"
-        },
-        {
             "name": "symfony/swiftmailer-bundle",
             "version": "v2.6.3",
             "source": {
@@ -4935,41 +5053,49 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.8.26",
+            "version": "v3.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "33553101754e0888a1a1fecc46d7a7f10f6f9580"
+                "reference": "6f80cbd2dd89c5308b14e03d806356fac72c263e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/33553101754e0888a1a1fecc46d7a7f10f6f9580",
-                "reference": "33553101754e0888a1a1fecc46d7a7f10f6f9580",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/6f80cbd2dd89c5308b14e03d806356fac72c263e",
+                "reference": "6f80cbd2dd89c5308b14e03d806356fac72c263e",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": "~2.4",
                 "ext-xml": "*",
-                "php": ">=5.3.9",
+                "fig/link-util": "^1.0",
+                "php": ">=5.5.9",
+                "psr/cache": "~1.0",
+                "psr/container": "^1.0",
+                "psr/link": "^1.0",
                 "psr/log": "~1.0",
-                "symfony/polyfill-apcu": "~1.1",
+                "psr/simple-cache": "^1.0",
                 "symfony/polyfill-intl-icu": "~1.0",
                 "symfony/polyfill-mbstring": "~1.0",
-                "symfony/polyfill-php54": "~1.0",
-                "symfony/polyfill-php55": "~1.0",
                 "symfony/polyfill-php56": "~1.0",
                 "symfony/polyfill-php70": "~1.0",
                 "symfony/polyfill-util": "~1.0",
-                "symfony/security-acl": "~2.7|~3.0.0",
                 "twig/twig": "~1.34|~2.4"
             },
             "conflict": {
-                "phpdocumentor/reflection": "<1.0.7",
+                "phpdocumentor/reflection-docblock": "<3.0||>=3.2.0",
+                "phpdocumentor/type-resolver": "<0.2.0",
                 "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0"
+            },
+            "provide": {
+                "psr/cache-implementation": "1.0",
+                "psr/container-implementation": "1.0",
+                "psr/simple-cache-implementation": "1.0"
             },
             "replace": {
                 "symfony/asset": "self.version",
                 "symfony/browser-kit": "self.version",
+                "symfony/cache": "self.version",
                 "symfony/class-loader": "self.version",
                 "symfony/config": "self.version",
                 "symfony/console": "self.version",
@@ -4979,6 +5105,7 @@
                 "symfony/dependency-injection": "self.version",
                 "symfony/doctrine-bridge": "self.version",
                 "symfony/dom-crawler": "self.version",
+                "symfony/dotenv": "self.version",
                 "symfony/event-dispatcher": "self.version",
                 "symfony/expression-language": "self.version",
                 "symfony/filesystem": "self.version",
@@ -4987,9 +5114,9 @@
                 "symfony/framework-bundle": "self.version",
                 "symfony/http-foundation": "self.version",
                 "symfony/http-kernel": "self.version",
+                "symfony/inflector": "self.version",
                 "symfony/intl": "self.version",
                 "symfony/ldap": "self.version",
-                "symfony/locale": "self.version",
                 "symfony/monolog-bridge": "self.version",
                 "symfony/options-resolver": "self.version",
                 "symfony/process": "self.version",
@@ -5005,32 +5132,39 @@
                 "symfony/security-http": "self.version",
                 "symfony/serializer": "self.version",
                 "symfony/stopwatch": "self.version",
-                "symfony/swiftmailer-bridge": "self.version",
                 "symfony/templating": "self.version",
                 "symfony/translation": "self.version",
                 "symfony/twig-bridge": "self.version",
                 "symfony/twig-bundle": "self.version",
                 "symfony/validator": "self.version",
                 "symfony/var-dumper": "self.version",
+                "symfony/web-link": "self.version",
                 "symfony/web-profiler-bundle": "self.version",
+                "symfony/web-server-bundle": "self.version",
+                "symfony/workflow": "self.version",
                 "symfony/yaml": "self.version"
             },
             "require-dev": {
+                "cache/integration-tests": "dev-master",
+                "doctrine/cache": "~1.6",
                 "doctrine/data-fixtures": "1.0.*",
                 "doctrine/dbal": "~2.4",
-                "doctrine/doctrine-bundle": "~1.2",
+                "doctrine/doctrine-bundle": "~1.4",
                 "doctrine/orm": "~2.4,>=2.4.5",
-                "egulias/email-validator": "~1.2,>=1.2.1",
+                "egulias/email-validator": "~1.2,>=1.2.8|~2.0",
                 "monolog/monolog": "~1.11",
                 "ocramius/proxy-manager": "~0.4|~1.0|~2.0",
-                "phpdocumentor/reflection": "^1.0.7",
+                "phpdocumentor/reflection-docblock": "^3.0",
+                "predis/predis": "~1.0",
                 "sensio/framework-extra-bundle": "^3.0.2",
-                "symfony/phpunit-bridge": "~3.2"
+                "symfony/phpunit-bridge": "~3.2",
+                "symfony/polyfill-apcu": "~1.1",
+                "symfony/security-acl": "~2.8|~3.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "3.3-dev"
                 }
             },
             "autoload": {
@@ -5038,7 +5172,6 @@
                     "Symfony\\Bridge\\Doctrine\\": "src/Symfony/Bridge/Doctrine/",
                     "Symfony\\Bridge\\Monolog\\": "src/Symfony/Bridge/Monolog/",
                     "Symfony\\Bridge\\ProxyManager\\": "src/Symfony/Bridge/ProxyManager/",
-                    "Symfony\\Bridge\\Swiftmailer\\": "src/Symfony/Bridge/Swiftmailer/",
                     "Symfony\\Bridge\\Twig\\": "src/Symfony/Bridge/Twig/",
                     "Symfony\\Bundle\\": "src/Symfony/Bundle/",
                     "Symfony\\Component\\": "src/Symfony/Component/"
@@ -5069,7 +5202,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2017-08-01T09:05:29+00:00"
+            "time": "2017-08-01T10:26:30+00:00"
         },
         {
             "name": "tedivm/stash",
@@ -5427,6 +5560,46 @@
                 "translation"
             ],
             "time": "2017-05-17T21:16:31+00:00"
+        },
+        {
+            "name": "willdurand/jsonp-callback-validator",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/willdurand/JsonpCallbackValidator.git",
+                "reference": "1a7d388bb521959e612ef50c5c7b1691b097e909"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/willdurand/JsonpCallbackValidator/zipball/1a7d388bb521959e612ef50c5c7b1691b097e909",
+                "reference": "1a7d388bb521959e612ef50c5c7b1691b097e909",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JsonpCallbackValidator": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "William Durand",
+                    "email": "william.durand1@gmail.com",
+                    "homepage": "http://www.willdurand.fr"
+                }
+            ],
+            "description": "JSONP callback validator.",
+            "time": "2014-01-20T22:35:06+00:00"
         },
         {
             "name": "zendframework/zend-code",
@@ -8019,22 +8192,22 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "3.2.2",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "4aada1f93c72c35e22fb1383b47fee43b8f1d157"
+                "reference": "8331b5efe816ae05461b7ca1e721c01b46bafb3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/4aada1f93c72c35e22fb1383b47fee43b8f1d157",
-                "reference": "4aada1f93c72c35e22fb1383b47fee43b8f1d157",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/8331b5efe816ae05461b7ca1e721c01b46bafb3e",
+                "reference": "8331b5efe816ae05461b7ca1e721c01b46bafb3e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5",
                 "phpdocumentor/reflection-common": "^1.0@dev",
-                "phpdocumentor/type-resolver": "^0.3.0",
+                "phpdocumentor/type-resolver": "^0.2.0",
                 "webmozart/assert": "^1.0"
             },
             "require-dev": {
@@ -8060,24 +8233,24 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2017-08-08T06:39:58+00:00"
+            "time": "2016-09-30T07:12:33+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "0.3.0",
+            "version": "0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "fb3933512008d8162b3cdf9e18dba9309b7c3773"
+                "reference": "e224fb2ea2fba6d3ad6fdaef91cd09a172155ccb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/fb3933512008d8162b3cdf9e18dba9309b7c3773",
-                "reference": "fb3933512008d8162b3cdf9e18dba9309b7c3773",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/e224fb2ea2fba6d3ad6fdaef91cd09a172155ccb",
+                "reference": "e224fb2ea2fba6d3ad6fdaef91cd09a172155ccb",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5 || ^7.0",
+                "php": ">=5.5",
                 "phpdocumentor/reflection-common": "^1.0"
             },
             "require-dev": {
@@ -8107,7 +8280,7 @@
                     "email": "me@mikevanriel.com"
                 }
             ],
-            "time": "2017-06-03T08:32:36+00:00"
+            "time": "2016-11-25T06:54:22+00:00"
         },
         {
             "name": "phpspec/prophecy",
@@ -8564,55 +8737,6 @@
                 "xunit"
             ],
             "time": "2017-08-03T14:08:16+00:00"
-        },
-        {
-            "name": "psr/container",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/container.git",
-                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
-                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Container\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "Common Container Interface (PHP FIG PSR-11)",
-            "homepage": "https://github.com/php-fig/container",
-            "keywords": [
-                "PSR-11",
-                "container",
-                "container-interface",
-                "container-interop",
-                "psr"
-            ],
-            "time": "2017-02-14T16:28:37+00:00"
         },
         {
             "name": "psr/http-message",
@@ -9314,9 +9438,33 @@
             "time": "2016-11-23T20:04:58+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "1.11",
+            "alias_normalized": "1.11.0.0",
+            "version": "2.0.9999999.9999999-dev",
+            "package": "ezsystems/platform-ui-bundle"
+        },
+        {
+            "alias": "1.3.x-dev",
+            "alias_normalized": "1.3.9999999.9999999-dev",
+            "version": "dev-ezplatform_assets",
+            "package": "composer/installers"
+        },
+        {
+            "alias": "1.0.x-dev",
+            "alias_normalized": "1.0.9999999.9999999-dev",
+            "version": "9999999-dev",
+            "package": "ezsystems/hybrid-platform-ui"
+        }
+    ],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "ezsystems/platform-ui-bundle": 20,
+        "composer/installers": 20,
+        "ezsystems/hybrid-platform-ui": 20,
+        "ezsystems/hybrid-platform-ui-core-components": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

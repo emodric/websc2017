@@ -7,7 +7,7 @@ ezpublish:
         list:
             - ngadminui
         groups:
-            ngadminui:
+            site_group:
                 - ngadminui
         match:
             Map\URI:

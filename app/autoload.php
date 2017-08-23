@@ -10,6 +10,8 @@
 use Doctrine\Common\Annotations\AnnotationRegistry;
 use Composer\Autoload\ClassLoader;
 
+require_once __DIR__ . '/../ezpublish_legacy/autoload.php';
+
 /**
  * @var ClassLoader
  */
