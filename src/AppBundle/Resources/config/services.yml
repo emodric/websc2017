@@ -3,3 +3,25 @@ services:
         class: AppBundle\NgAdminUI\LinksMenuPlugin
         tags:
             - {name: netgen_admin_ui.menu_plugin}
+
+    app.platform_ui_navigationhub.zones.links:
+        class: "%ezsystems.platformui.navigationhub.zone.class%"
+        public: false
+        arguments:
+            - "Links"
+            - "links"
+        tags:
+            - {name: ezplatform.ui.zone}
+
+    app.platformui.navigationhub.link.admin.links:
+        class: "%ezsystems.platformui.navigationhub.link.route.class%"
+        arguments:
+            - "@router"
+            - "app_url_list"
+            - "Links"
+            - "links"
+        calls:
+            - [setRoutePrefix, ["app_url"]]
+        tags:
+            - {name: ezplatform.ui.link}
+        public: false
