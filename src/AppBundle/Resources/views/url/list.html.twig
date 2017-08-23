@@ -1,28 +1,32 @@
-<h1>All links ({{ urls.nbResults }})</h1>
+{% extends '@NetgenAdminUI/pagelayout.html.twig' %}
 
-<table>
-    <thead>
-        <tr>
-            <th>Address</th>
-            <th>Status</th>
-            <th>Checked</th>
-            <th>Modified</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for url in urls %}
+{% block content %}
+    <h1>All links ({{ urls.nbResults }})</h1>
+
+    <table>
+        <thead>
             <tr>
-                <td><a href="{{ path('app_url_view', {urlId: url.id}) }}">{{ url.url }}</a> (<a href="{{ url.url }}">open</a>)</td>
-                <td>{{ url.isValid ? 'Valid' : 'Invalid' }}</td>
-                <td>{{ url.lastChecked.timestamp > 0 ? url.lastChecked|date : 'Never' }}</td>
-                <td>{{ url.modified|date }}</td>
-                <td><a href="{{ path('app_url_edit', {urlId: url.id}) }}">Edit</a></td>
+                <th>Address</th>
+                <th>Status</th>
+                <th>Checked</th>
+                <th>Modified</th>
+                <th></th>
             </tr>
-        {% endfor %}
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            {% for url in urls %}
+                <tr>
+                    <td><a href="{{ path('app_url_view', {urlId: url.id}) }}">{{ url.url }}</a> (<a href="{{ url.url }}">open</a>)</td>
+                    <td>{{ url.isValid ? 'Valid' : 'Invalid' }}</td>
+                    <td>{{ url.lastChecked.timestamp > 0 ? url.lastChecked|date : 'Never' }}</td>
+                    <td>{{ url.modified|date }}</td>
+                    <td><a href="{{ path('app_url_edit', {urlId: url.id}) }}">Edit</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 
-{% if urls.haveToPaginate() %}
-    {{ pagerfanta(urls) }}
-{% endif %}
+    {% if urls.haveToPaginate() %}
+        {{ pagerfanta(urls) }}
+    {% endif %}
+{% endblock %}
