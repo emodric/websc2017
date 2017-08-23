@@ -8,7 +8,7 @@ LoginPage=custom
 RequireUserLogin=true
 RelatedSiteAccessList[]
 RelatedSiteAccessList[]=site
-RelatedSiteAccessList[]=admin
+RelatedSiteAccessList[]=legacy
 RelatedSiteAccessList[]=ngadminui
 ShowHiddenNodes=true
 

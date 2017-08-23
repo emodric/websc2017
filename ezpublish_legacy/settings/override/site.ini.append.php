@@ -20,7 +20,8 @@ SessionNameHandler=custom
 DefaultAccess=site
 SiteList[]
 SiteList[]=site
-SiteList[]=admin
+SiteList[]=legacy
+SiteList[]=ngadminui
 RootNodeDepth=1
 
 [UserSettings]
@@ -30,7 +31,7 @@ LogoutRedirect=/
 CheckValidity=false
 AvailableSiteAccessList[]
 AvailableSiteAccessList[]=site
-AvailableSiteAccessList[]=admin
+AvailableSiteAccessList[]=legacy
 AvailableSiteAccessList[]=ngadminui
 MatchOrder=uri
 HostMatchMapItems[]

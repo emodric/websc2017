@@ -16,9 +16,9 @@ ezpublish:
 
     # Siteaccess configuration, with one siteaccess per default
     siteaccess:
-        list: [site, admin]
+        list: [site, legacy]
         groups:
-            site_group: [site, admin]
+            site_group: [site, legacy]
         default_siteaccess: site
         match:
             URIElement: 1
@@ -42,5 +42,5 @@ ezpublish:
 
 ez_publish_legacy:
     system:
-        admin:
+        legacy:
            legacy_mode: true
