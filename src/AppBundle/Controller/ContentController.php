@@ -27,6 +27,8 @@ class ContentController extends Controller
                 )
             );
 
+        $urls = array();
+
         foreach ($contentLinks as $contentLink) {
             if (!isset($urls[$contentLink->getUrlId()])) {
                 $urls[$contentLink->getUrlId()] = $contentLink->getUrl();
