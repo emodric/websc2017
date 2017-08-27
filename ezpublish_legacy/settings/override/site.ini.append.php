@@ -5,6 +5,7 @@ VarDir=var/site
 
 [ExtensionSettings]
 ActiveExtensions[]
+ActiveExtensions[]=app
 ActiveExtensions[]=ngadminui
 ActiveExtensions[]=ngsymfonytools
 ActiveExtensions[]=ezrichtext
