@@ -1,0 +1,8 @@
+ezpublish:
+    system:
+        admin:
+            content_view:
+                links_tab:
+                    links_tab:
+                        template: "@App/content/links_tab/links_tab.html.twig"
+                        match: ~

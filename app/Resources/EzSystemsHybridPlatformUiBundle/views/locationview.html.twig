@@ -1,0 +1,80 @@
+{% trans_default_domain 'locationview' %}
+
+{# Temp solution until https://jira.ez.no/browse/EZP-27802 is implemented #}
+
+<ez-content-view>
+    <section class="ez-content-view-column ez-tabs">
+    {% block contentview %}
+        {% block contentview_details %}
+
+        <header class="ez-page-header">
+            {% for location in locations %}
+                {% if location.id == locationId %}
+                    {{ include('@EzSystemsHybridPlatformUi/fields/location/path.html.twig', {'locations': location.pathLocations}) }}
+                {% endif %}
+            {% endfor %}
+
+            <h1>{{ ez_content_name(content) }}</h1>
+            <br>
+            <span class="ez-content-type-name">{{ contentType.name }}</span>
+        </header>
+
+        <ul class="ez-tabs-list">
+            <li class="ez-tabs-label is-tab-selected"><a href="#ez-tab-view">{{ 'tab.view'|trans|desc('View') }}</a></li>
+            <li class="ez-tabs-label"><a href="#ez-tab-details">{{ 'tab.details'|trans|desc('Details') }}</a></li>
+            <li class="ez-tabs-label"><a href="#ez-tab-versions">{{ 'tab.versions'|trans|desc('Versions') }}</a></li>
+            <li class="ez-tabs-label"><a href="#ez-tab-locations">{{ 'tab.locations'|trans|desc('Locations') }}</a></li>
+            <li class="ez-tabs-label"><a href="#ez-tab-relations">{{ 'tab.related.content'|trans|desc('Related content') }}</a></li>
+            <li class="ez-tabs-label"><a href="#ez-tab-translations">{{ 'tab.translations'|trans|desc('Translations') }}</a></li>
+            <li class="ez-tabs-label"><a href="#ez-tab-urls">{{ 'tab.urls'|trans|desc('URL') }}</a></li>
+            <li class="ez-tabs-label"><a href="#ez-tab-links">Links</a></li>
+        </ul>
+
+        <div class="ez-tabs-panels">
+            <div class="ez-tabs-panel is-tab-selected" id="ez-tab-view">
+                {{ render(controller('ez_content:viewAction', {'contentId': contentId, 'locationId': locationId, 'viewType': 'content_tab'})) }}
+            </div>
+            <ez-asynchronous-block
+                class="ez-tabs-panel" id="ez-tab-details"
+                url="{{ path('_ez_content_view', {'contentId': contentId, 'locationId': locationId, 'viewType': 'details_tab'}) }}"
+            ></ez-asynchronous-block>
+            <ez-asynchronous-block
+                class="ez-tabs-panel" id="ez-tab-versions"
+                url="{{ path('_ez_content_view', {'contentId': contentId, 'locationId': locationId, 'viewType': 'versions_tab'}) }}"
+            ></ez-asynchronous-block>
+            <ez-asynchronous-block
+                class="ez-tabs-panel" id="ez-tab-locations"
+                url="{{ path('_ez_content_view', {'contentId': contentId, 'locationId': locationId, 'viewType': 'locations_tab'}) }}"
+            ></ez-asynchronous-block>
+            <ez-asynchronous-block
+                class="ez-tabs-panel" id="ez-tab-relations"
+                url="{{ path('_ez_content_view', {'contentId': contentId, 'locationId': locationId,'viewType': 'relations_tab'}) }}"
+            ></ez-asynchronous-block>
+            <ez-asynchronous-block
+                class="ez-tabs-panel" id="ez-tab-translations"
+                url="{{ path('_ez_content_view', {'contentId': contentId, 'locationId': locationId, 'viewType': 'translations_tab'}) }}"
+            ></ez-asynchronous-block>
+            <ez-asynchronous-block
+                    class="ez-tabs-panel" id="ez-tab-urls"
+                    url="{{ path('_ez_content_view', {'contentId': contentId, 'locationId': locationId, 'viewType': 'urls_tab'}) }}"
+            ></ez-asynchronous-block>
+            <ez-asynchronous-block
+                    class="ez-tabs-panel" id="ez-tab-links"
+                    url="{{ path('_ez_content_view', {'contentId': contentId, 'locationId': locationId, 'viewType': 'links_tab'}) }}"
+            ></ez-asynchronous-block>
+        </div>
+        {% endblock contentview_details %}
+
+        {% block subitems %}
+        <ez-subitem parent-location-id="{{ location.id }}">
+            Loading subitems...
+        </ez-subitem>
+        {% endblock %}
+    </section>
+    <ez-toolbar class="ez-action-bar" visible>
+        {% block content_action_toolbar %}
+        {% endblock %}
+    </ez-toolbar>
+    {% endblock %}
+    </section>
+</ez-content-view>
