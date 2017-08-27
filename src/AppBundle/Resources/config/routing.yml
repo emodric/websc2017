@@ -16,3 +16,10 @@ app_url_edit:
         _controller: AppBundle:Url:editUrl
     requirements:
         urlId: \d+
+
+app_url_content_urls:
+    path: /nextgen/url/content/{contentId}
+    defaults:
+        _controller: AppBundle:Content:contentUrls
+    requirements:
+        contentId: \d+

@@ -1,0 +1,24 @@
+<h1>All links related to {{ ez_content_name(content) }}</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Address</th>
+            <th>Status</th>
+            <th>Checked</th>
+            <th>Modified</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for url in urls %}
+            <tr>
+                <td><a href="{{ path('app_url_view', {urlId: url.id}) }}">{{ url.url }}</a> (<a href="{{ url.url }}">open</a>)</td>
+                <td>{{ url.isValid ? 'Valid' : 'Invalid' }}</td>
+                <td>{{ url.lastChecked.timestamp > 0 ? url.lastChecked|date : 'Never' }}</td>
+                <td>{{ url.modified|date }}</td>
+                <td><a href="{{ path('app_url_edit', {urlId: url.id}) }}">Edit</a></td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
