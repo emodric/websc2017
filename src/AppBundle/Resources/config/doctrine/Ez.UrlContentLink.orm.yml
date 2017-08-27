@@ -15,4 +15,11 @@ AppBundle\Entity\Ez\UrlContentLink:
             type: integer
             column: contentobject_attribute_version
             id: true
+    manyToOne:
+        url:
+            targetEntity: Url
+            inversedBy: contentLinks
+            joinColumn:
+                name: url_id
+                referencedColumnName: id
     lifecycleCallbacks: {  }

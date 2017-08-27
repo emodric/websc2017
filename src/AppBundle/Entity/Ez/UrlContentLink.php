@@ -24,25 +24,28 @@ class UrlContentLink
      */
     private $contentFieldVersion;
 
+    /**
+     * @var \AppBundle\Entity\Ez\Url
+     */
+    private $url;
+
     public function __construct(Url $url, Field $field, $versionNo)
     {
-        $this->setUrlId($url->getId());
-        $this->setContentFieldId($field->id);
-        $this->setContentFieldVersion($versionNo);
+        $this->url = $url;
+
+        $this->urlId = $url->getId();
+        $this->contentFieldId = $field->id;
+        $this->contentFieldVersion = $versionNo;
     }
 
     /**
-     * Set urlId
+     * Get url
      *
-     * @param integer $urlId
-     *
-     * @return UrlContentLink
+     * @return \AppBundle\Entity\Ez\Url
      */
-    public function setUrlId($urlId)
+    public function getUrl()
     {
-        $this->urlId = $urlId;
-
-        return $this;
+        return $this->url;
     }
 
     /**
@@ -56,20 +59,6 @@ class UrlContentLink
     }
 
     /**
-     * Set contentFieldId
-     *
-     * @param integer $contentFieldId
-     *
-     * @return UrlContentLink
-     */
-    public function setContentFieldId($contentFieldId)
-    {
-        $this->contentFieldId = $contentFieldId;
-
-        return $this;
-    }
-
-    /**
      * Get contentFieldId
      *
      * @return int
@@ -77,20 +66,6 @@ class UrlContentLink
     public function getContentFieldId()
     {
         return $this->contentFieldId;
-    }
-
-    /**
-     * Set contentFieldVersion
-     *
-     * @param int $contentFieldVersion
-     *
-     * @return UrlContentLink
-     */
-    public function setContentFieldVersion($contentFieldVersion)
-    {
-        $this->contentFieldVersion = $contentFieldVersion;
-
-        return $this;
     }
 
     /**

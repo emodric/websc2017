@@ -25,4 +25,8 @@ AppBundle\Entity\Ez\Url:
             column: original_url_md5
         url:
             type: text
+    oneToMany:
+        contentLinks:
+            targetEntity: UrlContentLink
+            mappedBy: url
     lifecycleCallbacks: {  }

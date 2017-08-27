@@ -3,6 +3,7 @@
 namespace AppBundle\Entity\Ez;
 
 use DateTime;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Url
@@ -44,9 +45,16 @@ class Url
      */
     private $url;
 
+    /**
+     * @var \AppBundle\Entity\Ez\UrlContentLink[]
+     */
+    private $contentLinks;
+
     public function __construct($url)
     {
         $this->setUrl($url);
+
+        $this->contentLinks = new ArrayCollection();
     }
 
     /**
@@ -209,6 +217,16 @@ class Url
         $dateTime->setTimestamp($timestamp);
 
         return $dateTime;
+    }
+
+    /**
+     * Get contentLinks
+     *
+     * @return \AppBundle\Entity\Ez\UrlContentLink[]
+     */
+    public function getContentLinks()
+    {
+        return $this->contentLinks;
     }
 }
 
