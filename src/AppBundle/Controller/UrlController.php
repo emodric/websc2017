@@ -35,11 +35,10 @@ class UrlController extends Controller
         $contentService = $this->getRepository()->getContentService();
 
         $url = $urlRepo->find($urlId);
-        $links = $linkRepo->findBy(array('urlId' => $url->getId()));
 
         $content = array();
 
-        foreach ($links as $link) {
+        foreach ($url->getContentLinks() as $link) {
             $contentId = $linkRepo->getContentId($link);
             if (!isset($content[$contentId])) {
                 $content[$contentId] = $contentService->loadContent($contentId);
